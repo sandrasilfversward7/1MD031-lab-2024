@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
 body {
-    font-size: 12pt;
+    font-family: "Times New Roman", serif;
+    font-size: 20pt;
 }
 
 p {
@@ -12,11 +13,12 @@ h1 {
     font-size: 36pt;
 }
 main, header, footer, nav ul {
-    max-width: 40rem;
-    margin: 0 auto 0 auto;
+    max-width: 100rem;
+    margin: 0 auto;
+
 }
 main {
-    background-color: bisque;
+    background-color: white;
 }
 
 /* nav ul li {
@@ -26,19 +28,29 @@ main {
     margin: 1em;
 } */
 
+
 header {
-    background-image: url("../img/polacks.jpg");
-    background-size: cover;
-    overflow: hidden;
     width: 100%;
-    height: 200px;
-    opacity: 0.5;
+    height: 100px;
+    position:relative;
+    overflow: hidden; 
+}
+
+header img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;  
 }
 
 header h1 {
-    width:40rem;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     text-align: center;
+    color: rgb(202, 0, 0);
+    opacity: 1;
+    position:relative;
 }
 
 nav ul {
@@ -62,3 +74,53 @@ nav li {
     color: green;
     font-weight: bold;
 }
+
+.allergi{
+    font-weight:bold
+}
+
+#Burgerinfo{
+    background-color:black;
+    color: white;
+    border: 3px dashed white;
+    margin: 0px
+}
+
+#Burgerinfo div{
+    margin: 10x;
+    padding: 10px;
+}
+
+#Orderinfo{
+    background-color:white;
+    border: 3px dashed black;
+    margin: 10px
+}
+
+button:hover{
+    background-color: blue;
+    cursor:pointer;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+section{
+    margin: 40px 40px;
+    padding: 10px
+}
+
+.wrapper{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: 33% 33% 33%;    
+}
+
+.box{
+    border-radius:5px;
+    padding: 10px;
+    font-size: 150%;
+}
+

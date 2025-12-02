@@ -1,21 +1,21 @@
 [{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Den lille", 
+    "kCal": 300, 
+    "url": "/img/burgir.jpg",
+    "laktos": true, 
+    "gluten": true
 },
 {
-    "name": "Veggie Bliss", 
+    "name": "Den mellre", 
     "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "url": "/img/mellre.jpg",
+    "laktos": false,
+    "gluten": true
 },
 {
-    "name": "Veggie Bliss", 
+    "name": "Den store", 
     "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "url": "/img/store.jpg",
+    "laktos": false,
+    "gluten": true
 }]

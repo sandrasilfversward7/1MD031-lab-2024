@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title> Test Hamburger site</title>
+    <meta charset="UTF-8"/>
+  </head>
+
+  <body>
+    <header>
+        <img src="/img/restu.jpg">
+        <h1>Välkommen till Smarriga BurgareOnline</h1>
+        
+    </header>
+    <main>
+        <section id="Burgerinfo">
+                <h2> Vilken burgare är du sugen på?</h2>
+                    <p> Här får du välja helt fritt vilken burgare du vill ha</p>
+                    <p> Våra alternativ är
+                    <ul> 
+                        <li> Den lille </li>
+                        <li> Den mellre</li>
+                        <li> Den store </li>
+                    </ul>
+                    </p>
+            <div class="wrapper">   
+                <div class="box a">    
+                    <h3> Den lille </h3>
+                    <img src="/img/burgir.jpg" style="height: 150px">
+
+                    <ul>Allergier 
+                        <li><span class="allergi">bröd</span> </li>
+                        <li><span class="allergi">Ost </span> </li>
+                        <li><span class="allergi">kött</span> </li>
+                    </ul>
+                </div>
+
+                <div class="box b">                
+                    <h3> Den mellre </h3>
+                    <img src="/img/mellre.jpg" style="height: 150px">
+
+                    <ul>Allergier 
+                        <li><span class="allergi">bröd</span> </li>
+                        <li><span class="allergi">Ost</span> </li>
+                        <li><span class="allergi">kött</span> </li>
+                    </ul>
+                </div>
+
+                <div class="box c">        
+                    <h3> Den store </h3>
+                    <img src="/img/store.jpg" style="height: 150px">
+
+                    <ul>Allergier 
+                        <li><span class="allergi">bröd</span> </li>
+                        <li><span class="allergi">Ost</span> </li>
+                        <li><span class="allergi">kött</span> </li>
+                    </ul>
+                </div>
+            </div>
+        </section>  
+
+        <section id="Orderinfo">
+            <div>
+                <h2> Kundinformation</h2>
+                    <p> Här ska du få fylla i information om dig själv</p>
+                    <h3> Leverans information</h3>
+                     <p> 
+                        <label for ="Förochefternamn"> Namn </label><br>
+                        <input type="text" id="Förochefternamn" name="fn" required="required" placeholder="För- och efternamn">
+                    </p> 
+                
+                    <p>
+                        <label for ="Email"> Email </label><br>
+                        <input type="email" id="email" name="em" required="required" placeholder="Email-adress">
+                    </p>
+
+                    <p>
+                        <label for ="Adress"> Adress </label><br>
+                        <input type="text" id="Adress" name="ad" required="required" placeholder="Gatunamn">
+                    </p>
+
+                    <p>
+                        <label for ="Housenumber"> Housenumber </label><br>
+                        <input type="number" id="Housenumber" name="hn" required="required" placeholder="Housenumber">
+                    </p>
+                </div>
+
+            <div> 
+            <h3> Betalningsalternativ </h3>
+                <p>
+                    <label for="betalningsmetod">  </label>
+                    <select id="betalningsmetod" name="bm">
+                        <option> Betala med kort </option>
+                        <option> Betala med swish </option>
+                        <option> Betala med klarna </option>
+                        <option> Betala med faktura </option>
+                    </select>
+                </p>
+            </div>
+
+            <div>
+                <h3> Personlig information</h3>
+                <p>
+                    <input type="radio" id="gender" name="gender" checked="checked" value ="Vill inte ange"/>
+                    <label for="gender"> Vill inte ange </label>
+                </p>
+                <p>
+                    <input type="radio" id="gender" name="gender" value ="Kvinna"/>
+                    <label for="gender"> Kvinna </label>
+                </p>
+                <p>
+                    <input type="radio" id="gender" name="gender" value ="Man"/>
+                    <label for="gender"> Man </label>
+                </p>
+
+            </div>
+              
+        </section>  
+        <button type="submit">
+            <img src="/img/button.jpg" style="height: 50px">
+            Placera order!
+            </button>
+    </main>
+    
+    <hr> <footer>
+        <p> lite oklart men copyright</p>
+    </footer>
+  </body>
+</html>
+

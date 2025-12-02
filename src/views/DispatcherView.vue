@@ -2,17 +2,29 @@
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+         
+          <div v-for="(amount,name) in order.orderItems" v-bind:key="name">
+          {{name}}: {{amount}}
+           </div>
+
+           <div>
+            <strong> {{order.customer.name}}</strong> <br>
+            {{order.customer.email}}, {{order.customer.betalningsmetod}}, {{order.customer.gender}}
+          </div>
+
+
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
+      
       <div id="dots">
           <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
-            {{ key }}
+            T
           </div>
       </div>
     </div>
   </template>
+
   <script>
   import io from 'socket.io-client'
   const socket = io("localhost:3000");
@@ -24,14 +36,17 @@
         orders: null,
       }
     },
+
     created: function () {
       socket.on('currentQueue', data =>
         this.orders = data.orders);
     },
+
     methods: {
       clearQueue: function () {
         socket.emit('clearQueue');
       },
+
       changeStatus: function(orderId) {
         socket.emit('changeStatus', {orderId: orderId, status: "Annan status"});
 
@@ -40,6 +55,7 @@
   }
   </script>
   <style>
+
   #orderList {
     top:1em;
     left:1em;
@@ -49,6 +65,7 @@
     background: rgba(255,255,255, 0.5);
     padding: 1em;
   }
+  
   #dots {
     position: relative;
     margin: 0;
